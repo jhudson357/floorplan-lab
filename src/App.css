@@ -1,8 +1,15 @@
-div {
-  border: 1px solid grey;
-  margin: 5px;
-  padding: 5px;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
   color: white;
+}
+
+#root {
+  width: 80%;
+  height: 80vh;
 }
 
 .floorplan {
@@ -10,15 +17,45 @@ div {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+}
+
+.bedroom, 
+.bath,
+.living,
+.oven,
+.sink,
+.kitchen {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .upper-half,
 .lower-half {
   display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.upper-half {
+  height: 60%;
+}
+
+.lower-half {
+  height: 40%;
 }
 
 .upper-left {
   display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.upper-right {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(209	152	76);
 }
 
 .bedroom {
@@ -27,10 +64,12 @@ div {
 
 .kitchen {
   background-color: rgb(209	152	76);
+  height: 90%;
 }
 
 .oven-sink {
   display: flex;
+  height: 10%;
 }
 
 .oven {
@@ -47,5 +86,30 @@ div {
 
 .living {
   background-color: rgb(171	155	133);
+  width: 40%;
+}
+
+.upper-left > .bath {
+  height: 30%;
+}
+
+.upper-left > .bedroom {
+  height: 70%;
+}
+
+.upper-right > div {
+  height: 100%;
+}
+
+.lower-half > .bedroom {
+  width: 40%;
+}
+
+.lower-half > .bath {
+  width: 20%;
+}
+
+.oven-sink > div{
+  width: 50%;
 }
 

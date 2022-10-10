@@ -3,12 +3,15 @@ import Oven from "./Oven";
 
 const Kitchen = (props) => {
   return ( 
-    <div className="kitchen">
+    <div>
       <div className="oven-sink">
-        <Oven />
-        <Sink />
+          <Oven />
+          <Sink />
+
       </div>
-      Kitchen
+      <div className="kitchen">
+        Kitchen
+      </div>
     </ div>
   );
 }
