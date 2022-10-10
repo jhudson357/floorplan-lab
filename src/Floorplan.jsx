@@ -6,9 +6,13 @@ import Bath from './Bath'
 const Floorplan = (props) => {
   return ( 
     <div>
-      <Kitchen />
+      <Bedroom bedNum='1'/>
+      <div>
+        <Kitchen />
+      </div>
+      <Bedroom bedNum='2'/>
+      <Bedroom bedNum='3'/>
       {/* <LivingRoom />
-      <Bedroom />
       <Bath /> */}
     </div>
   );
