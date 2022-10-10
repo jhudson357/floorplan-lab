@@ -7,9 +7,7 @@ const Floorplan = (props) => {
   return ( 
     <div>
       <Bedroom bedNum='1'/>
-      <div>
-        <Kitchen />
-      </div>
+      <Kitchen />
       <Bath size='Full'/>
       <Bedroom bedNum='2'/>
       <LivingRoom />
