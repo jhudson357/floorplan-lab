@@ -5,12 +5,32 @@ div {
   color: white;
 }
 
+.floorplan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.upper-half,
+.lower-half {
+  display: flex;
+}
+
+.upper-left {
+  display: flex;
+}
+
 .bedroom {
   background-color: rgb(37	105	138);
 }
 
 .kitchen {
   background-color: rgb(209	152	76);
+}
+
+.oven-sink {
+  display: flex;
 }
 
 .oven {
