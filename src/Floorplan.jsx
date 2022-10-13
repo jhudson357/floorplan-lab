@@ -3,7 +3,7 @@ import LivingRoom from './LivingRoom'
 import Bedroom from './Bedroom'
 import Bath from './Bath'
 
-const Floorplan = (props) => {
+const Floorplan = () => {
   return ( 
     <div className='floorplan'>
       <div className='upper-half'>
